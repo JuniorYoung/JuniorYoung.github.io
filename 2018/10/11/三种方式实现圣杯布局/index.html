@@ -3,23 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>About | YangYu&#39;s Blob</title>
+  <title>三种方式实现圣杯布局 | YangYu&#39;s Blob</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="前端CSS" />
   
   
   
-  <meta name="description" content="这是一个关于我页面">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://www.yangyu.us/about/index.html">
+  
+  <meta name="description" content="第一种：浮动布局See the Pen 圣杯布局-浮动实现 by JuniorYoung (@junioryoung) on CodePen.   第二种：Flex布局See the Pen 圣杯布局-Flex实现 by JuniorYoung (@junioryoung) on CodePen.  第三种：Grid布局See the Pen 圣杯布局-Grid实现 by JuniorYoung">
+<meta name="keywords" content="前端,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三种方式实现圣杯布局">
+<meta property="og:url" content="https://www.yangyu.us/2018/10/11/三种方式实现圣杯布局/index.html">
 <meta property="og:site_name" content="YangYu&#39;s Blob">
-<meta property="og:description" content="这是一个关于我页面">
+<meta property="og:description" content="第一种：浮动布局See the Pen 圣杯布局-浮动实现 by JuniorYoung (@junioryoung) on CodePen.   第二种：Flex布局See the Pen 圣杯布局-Flex实现 by JuniorYoung (@junioryoung) on CodePen.  第三种：Grid布局See the Pen 圣杯布局-Grid实现 by JuniorYoung">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-28T18:26:44.369Z">
+<meta property="og:updated_time" content="2018-11-28T18:12:55.314Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="这是一个关于我页面">
+<meta name="twitter:title" content="三种方式实现圣杯布局">
+<meta name="twitter:description" content="第一种：浮动布局See the Pen 圣杯布局-浮动实现 by JuniorYoung (@junioryoung) on CodePen.   第二种：Flex布局See the Pen 圣杯布局-Flex实现 by JuniorYoung (@junioryoung) on CodePen.  第三种：Grid布局See the Pen 圣杯布局-Grid实现 by JuniorYoung">
   
     <link rel="alternate" href="/atom.xml" title="YangYu&#39;s Blob" type="application/atom+xml">
   
@@ -29,8 +32,7 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <!-- <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
-  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <style type="text/css">
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
     @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
@@ -53,7 +55,7 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -83,9 +85,9 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives/">Archives</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about/">About</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
                     
               </ul>
             </div>
@@ -101,7 +103,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main"><article id="page-"  class="article article-type-page" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-三种方式实现圣杯布局" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -109,7 +111,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      about
+      三种方式实现圣杯布局
     </h1>
   
 
@@ -117,18 +119,39 @@
     
     <div class="article-meta">
       
-       
+	<a href="/2018/10/11/三种方式实现圣杯布局/" class="article-date">
+	  <time datetime="2018-10-11T12:44:44.000Z" itemprop="datePublished">October 11, 2018</time>
+	</a>
+
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+ 
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一个关于我页面</p>
+        <h2 id="第一种：浮动布局"><a href="#第一种：浮动布局" class="headerlink" title="第一种：浮动布局"></a>第一种：浮动布局</h2><p></p><p data-height="265" data-theme-id="0" data-slug-hash="qQYyPQ" data-default-tab="css,result" data-user="junioryoung" data-pen-title="圣杯布局-浮动实现" class="codepen">See the Pen <a href="https://codepen.io/junioryoung/pen/qQYyPQ/" target="_blank" rel="noopener">圣杯布局-浮动实现</a> by JuniorYoung (<a href="https://codepen.io/junioryoung" target="_blank" rel="noopener">@junioryoung</a>) on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</p><p></p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+<h2 id="第二种：Flex布局"><a href="#第二种：Flex布局" class="headerlink" title="第二种：Flex布局"></a>第二种：Flex布局</h2><iframe height="265" scrolling="no" title="圣杯布局-Flex实现" src="//codepen.io/junioryoung/embed/LXgOBj/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/junioryoung/pen/LXgOBj/" target="_blank" rel="noopener">圣杯布局-Flex实现</a> by JuniorYoung (<a href="https://codepen.io/junioryoung" target="_blank" rel="noopener">@junioryoung</a>) on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.<br></iframe>
+
+<h2 id="第三种：Grid布局"><a href="#第三种：Grid布局" class="headerlink" title="第三种：Grid布局"></a>第三种：Grid布局</h2><iframe height="265" scrolling="no" title="圣杯布局-Grid实现" src="//codepen.io/junioryoung/embed/oQapGa/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/junioryoung/pen/oQapGa/" target="_blank" rel="noopener">圣杯布局-Grid实现</a> by JuniorYoung (<a href="https://codepen.io/junioryoung" target="_blank" rel="noopener">@junioryoung</a>) on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.<br></iframe>
       
     </div>
     <footer class="entry-meta entry-footer">
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+
       
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
       
         
 	<section id="comments" class="comment">
@@ -163,117 +186,30 @@
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 <!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一种：浮动布局"><span class="nav-number">1.</span> <span class="nav-text">第一种：浮动布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二种：Flex布局"><span class="nav-number">2.</span> <span class="nav-text">第二种：Flex布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三种：Grid布局"><span class="nav-number">3.</span> <span class="nav-text">第三种：Grid布局</span></a></li></ol>
+    
+    </div>
+  </aside>
 </section>
-          <aside id="sidebar">
-  
-    <div style="margin: 20px 0;">
-	<div id="search-form-wrap">
-
-    <form class="search-form">
-        <label style="width: 72%;">
-            <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" Search…" value="" name="s" title="Search for:">
-        </label>
-        <input type="submit" class="search-form-submit" value="Search">
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div>
-</div>
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Connect With Us</h3>
-    <div class="widget widget_athemes_social_icons">
-
-    	<ul class="clearfix widget-social-icons">   
-    	
-   			<li><a href="https://github.com/JuniorYoung" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://weibo.com/yangY8888" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://twitter.com/JuniorYoung_FE" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="mailto:yjunior@foxmail.com" title="Envelope"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://www.zhihu.com/people/s08allen" title="Zhihu"><i class="fa fa-zhihu" aria-hidden="true"></i></a></li> 
-
-   		
-   		</ul>
-
-
-   		<!--
-   		<ul class="clearfix widget-social-icons">   		
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/CSS/" style="font-size: 10px;">CSS</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
         
       </div>
 
@@ -282,9 +218,9 @@
   
     <a href="/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives/" class="mobile-nav-link">Archives</a>
+    <a href="/archives" class="mobile-nav-link">Archives</a>
   
-    <a href="/about/" class="mobile-nav-link">About</a>
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">
@@ -294,8 +230,15 @@
       <div class="site-info">
 	      &copy; 2018 YangYu&#39;s Blob All Rights Reserved.
         
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
       </div>
-      
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
   </div>
 </footer>
 
@@ -365,6 +308,9 @@
 
 
 
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
 
 
 
